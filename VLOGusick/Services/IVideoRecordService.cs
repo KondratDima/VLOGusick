@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using VLOGusick.Models;
 
-namespace VLOGusick.Services
+namespace VLOGusick.Services;
+
+public interface IVideoRecordService
 {
-    internal class IVideoRecordService
-    {
-    }
+    Task<ClipEntry> RecordAsync();
 }
